@@ -49,7 +49,7 @@ async def crbn(event):
     xx = await Carbon(code=code, file_name="ultroid_carbon", backgroundColor=col)
     await xxxx.delete()
     await event.reply(
-        f"Carbonised by {inline_mention(event.sender)}",
+        f"Carbonised by : {inline_mention(event.sender)}",
         file=xx,force_document=False,
     )
 
@@ -81,7 +81,7 @@ async def crbn(event):
     xx = await Carbon(code=code, backgroundColor=match)
     await msg.delete()
     await event.reply(
-        f"Carbonised by {inline_mention(event.sender)}",
+        f"Carbonised by : {inline_mention(event.sender)}",
         file=xx,force_document=False,
     )
 
