@@ -50,7 +50,7 @@ async def crbn(event):
     await xxxx.delete()
     await event.reply(
         f"Carbonised by {inline_mention(event.sender)}",
-        file=xx,
+        file=xx,force_document=False,
     )
 
 
@@ -82,7 +82,7 @@ async def crbn(event):
     await msg.delete()
     await event.reply(
         f"Carbonised by {inline_mention(event.sender)}",
-        file=xx,
+        file=xx,force_document=False,
     )
 
 
