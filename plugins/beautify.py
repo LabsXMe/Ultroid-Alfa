@@ -48,10 +48,16 @@ async def crbn(event):
             return await eor(xxxx, get_string("carbon_2"))
     xx = await Carbon(code=code, file_name="ultroid_carbon", backgroundColor=col)
     await xxxx.delete()
-    await event.reply(
-        f"Carbonised by : {inline_mention(event.sender)}",
-        file=xx,force_document=False,
+    await event.client.send_file(
+        event.chat_id,
+        file=xx,
+        caption=f"Carbonised by : {inline_mention(event.sender)}",
+        force_document=False,
     )
+    # await event.reply(
+    #     f"Carbonised by : {inline_mention(event.sender)}",
+    #     file=xx,force_document=False,
+    # )
 
 
 @ultroid_cmd(
