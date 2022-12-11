@@ -79,7 +79,7 @@ async def logo_gen(event):
         event.chat_id,
         file=name,
         caption=f"Logo by [{OWNER_NAME}](tg://user?id={OWNER_ID})",
-        force_document=True,
+        force_document=False,
     )
     os.remove(name)
     await xx.delete()
